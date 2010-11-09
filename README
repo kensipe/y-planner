@@ -35,13 +35,15 @@
 		2) backlog
 		3) set for each iteration
 		project setup -> release plan
+	- history of pairing... (hmmm)
 
 #centricity
 	1) projects - project health, project help, current iteration, iteration timelines, burndown, 
 	2) users - administration, who's working on what,
 	3) iteration - velocity, burndown
 	4) stories - all, backlog, discovered, planned, developer, tasks, creation (a story always belongs to a project... it should know if it is on an iteration or in the backlog, it needs to be able to split for a carry over)
-
+	5) company / entity -> has people / people management, has projects (MSP Pool features)
+	
 # ideas
  - perhaps mongodb or cassandra storage for project info and make it extensible ( this might restrict adoption to enterprise), useful if hosted solution
  - perhaps a google app engine version
