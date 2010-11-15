@@ -69,15 +69,6 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                  <label for="iterationId"><g:message code="story.iterationId.label" default="Iteration Id" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: storyInstance, field: 'iterationId', 'errors')}">
-                                    <g:textField name="iterationId" value="${fieldValue(bean: storyInstance, field: 'iterationId')}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
                                   <label for="name"><g:message code="story.name.label" default="Name" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: storyInstance, field: 'name', 'errors')}">

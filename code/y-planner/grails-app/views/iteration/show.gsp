@@ -1,10 +1,10 @@
 
-<%@ page import="org.yplanner.domain.Story" %>
+<%@ page import="org.yplanner.domain.Iteration" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="main" />
-        <g:set var="entityName" value="${message(code: 'story.label', default: 'Story')}" />
+        <g:set var="entityName" value="${message(code: 'iteration.label', default: 'Iteration')}" />
         <title><g:message code="default.show.label" args="[entityName]" /></title>
     </head>
     <body>
@@ -23,72 +23,72 @@
                     <tbody>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.id.label" default="Id" /></td>
+                            <td valign="top" class="name"><g:message code="iteration.id.label" default="Id" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "id")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.actualHours.label" default="Actual Hours" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "actualHours")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: iterationInstance, field: "id")}</td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.description.label" default="Description" /></td>
+                            <td valign="top" class="name"><g:message code="iteration.actualHours.label" default="Actual Hours" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "description")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.estimatedHours.label" default="Estimated Hours" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "estimatedHours")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: iterationInstance, field: "actualHours")}</td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.estimatedHoursCache.label" default="Estimated Hours Cache" /></td>
+                            <td valign="top" class="name"><g:message code="iteration.daysWorked.label" default="Days Worked" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "estimatedHoursCache")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.name.label" default="Name" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "name")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: iterationInstance, field: "daysWorked")}</td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.postponedHours.label" default="Postponed Hours" /></td>
+                            <td valign="top" class="name"><g:message code="iteration.description.label" default="Description" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "postponedHours")}</td>
-                            
-                        </tr>
-                    
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.priority.label" default="Priority" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "priority")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: iterationInstance, field: "description")}</td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.tasksEstimateAtIterationStart.label" default="Tasks Estimate At Iteration Start" /></td>
+                            <td valign="top" class="name"><g:message code="iteration.endDate.label" default="End Date" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "tasksEstimateAtIterationStart")}</td>
+                            <td valign="top" class="value"><g:formatDate date="${iterationInstance?.endDate}" /></td>
                             
                         </tr>
                     
                         <tr class="prop">
-                            <td valign="top" class="name"><g:message code="story.trackerId.label" default="Tracker Id" /></td>
+                            <td valign="top" class="name"><g:message code="iteration.estimatedHours.label" default="Estimated Hours" /></td>
                             
-                            <td valign="top" class="value">${fieldValue(bean: storyInstance, field: "trackerId")}</td>
+                            <td valign="top" class="value">${fieldValue(bean: iterationInstance, field: "estimatedHours")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="iteration.name.label" default="Name" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: iterationInstance, field: "name")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="iteration.projectId.label" default="Project Id" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: iterationInstance, field: "projectId")}</td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="iteration.startDate.label" default="Start Date" /></td>
+                            
+                            <td valign="top" class="value"><g:formatDate date="${iterationInstance?.startDate}" /></td>
+                            
+                        </tr>
+                    
+                        <tr class="prop">
+                            <td valign="top" class="name"><g:message code="iteration.title.label" default="Title" /></td>
+                            
+                            <td valign="top" class="value">${fieldValue(bean: iterationInstance, field: "title")}</td>
                             
                         </tr>
                     
@@ -97,7 +97,7 @@
             </div>
             <div class="buttons">
                 <g:form>
-                    <g:hiddenField name="id" value="${storyInstance?.id}" />
+                    <g:hiddenField name="id" value="${iterationInstance?.id}" />
                     <span class="button"><g:actionSubmit class="edit" action="edit" value="${message(code: 'default.button.edit.label', default: 'Edit')}" /></span>
                     <span class="button"><g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" /></span>
                 </g:form>

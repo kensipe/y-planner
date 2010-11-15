@@ -50,13 +50,6 @@
                             
                         </tr>
                     
-                        <tr class="prop">
-                            <td valign="top" class="name"><g:message code="project.projectId.label" default="Project Id" /></td>
-                            
-                            <td valign="top" class="value">${fieldValue(bean: projectInstance, field: "projectId")}</td>
-                            
-                        </tr>
-                    
                     </tbody>
                 </table>
             </div>

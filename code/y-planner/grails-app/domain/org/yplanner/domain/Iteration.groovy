@@ -5,7 +5,7 @@ class Iteration {
     static constraints = {
     }
 
-  long iterationId
+  Long id
   long projectId
   String title
   String description

@@ -32,7 +32,7 @@
                         
                             <g:sortableColumn property="estimatedHoursCache" title="${message(code: 'story.estimatedHoursCache.label', default: 'Estimated Hours Cache')}" />
                         
-                            <g:sortableColumn property="iterationId" title="${message(code: 'story.iterationId.label', default: 'Iteration Id')}" />
+                            <g:sortableColumn property="name" title="${message(code: 'story.name.label', default: 'Name')}" />
                         
                         </tr>
                     </thead>
@@ -50,7 +50,7 @@
                         
                             <td>${fieldValue(bean: storyInstance, field: "estimatedHoursCache")}</td>
                         
-                            <td>${fieldValue(bean: storyInstance, field: "iterationId")}</td>
+                            <td>${fieldValue(bean: storyInstance, field: "name")}</td>
                         
                         </tr>
                     </g:each>

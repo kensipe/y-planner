@@ -5,10 +5,10 @@ class Story {
     static constraints = {
     }
   
+   Long id
    String name
    String description
    int trackerId
-   int iterationId
    Collection tasks = new HashSet()
    Collection features = new HashSet()
 //   Person customer

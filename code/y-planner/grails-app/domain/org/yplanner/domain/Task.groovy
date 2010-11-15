@@ -5,6 +5,7 @@ class Task {
   static constraints = {
   }
 
+	Long id
   int acceptorId
   int pairId
   String name

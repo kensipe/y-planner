@@ -27,16 +27,16 @@
                 <div class="dialog">
                     <table>
                         <tbody>
-                        
+                                                
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="archived"><g:message code="project.archived.label" default="Archived" /></label>
+                                    <label for="name"><g:message code="project.name.label" default="Name" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: projectInstance, field: 'archived', 'errors')}">
-                                    <g:checkBox name="archived" value="${projectInstance?.archived}" />
+                                <td valign="top" class="value ${hasErrors(bean: projectInstance, field: 'name', 'errors')}">
+                                    <g:textField name="name" value="${projectInstance?.name}" />
                                 </td>
                             </tr>
-                        
+
                             <tr class="prop">
                                 <td valign="top" class="name">
                                     <label for="description"><g:message code="project.description.label" default="Description" /></label>
@@ -46,23 +46,6 @@
                                 </td>
                             </tr>
                         
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="name"><g:message code="project.name.label" default="Name" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: projectInstance, field: 'name', 'errors')}">
-                                    <g:textField name="name" value="${projectInstance?.name}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="projectId"><g:message code="project.projectId.label" default="Project Id" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: projectInstance, field: 'projectId', 'errors')}">
-                                    <g:textField name="projectId" value="${fieldValue(bean: projectInstance, field: 'projectId')}" />
-                                </td>
-                            </tr>
                         
                         </tbody>
                     </table>

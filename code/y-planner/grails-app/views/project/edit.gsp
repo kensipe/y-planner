@@ -58,15 +58,6 @@
                                 </td>
                             </tr>
                         
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                  <label for="projectId"><g:message code="project.projectId.label" default="Project Id" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: projectInstance, field: 'projectId', 'errors')}">
-                                    <g:textField name="projectId" value="${fieldValue(bean: projectInstance, field: 'projectId')}" />
-                                </td>
-                            </tr>
-                        
                         </tbody>
                     </table>
                 </div>
